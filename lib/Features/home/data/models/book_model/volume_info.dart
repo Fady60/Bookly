@@ -65,7 +65,7 @@ class VolumeInfo extends Equatable {
         : PanelizationSummary.fromJson(
             json['panelizationSummary'] as Map<String, dynamic>,
           ),
-    imageLinks: json['imageLinks'] == null
+    imageLinks: json['imageLink'] == null
         ? null
         : ImageLinks.fromJson(json['imageLinks'] as Map<String, dynamic>),
     language: json['language'] as String?,
